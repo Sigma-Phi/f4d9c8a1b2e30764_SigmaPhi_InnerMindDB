@@ -1,4 +1,3 @@
-這是將「附錄 A」整合進原著作後的完整版本。整份文件現在具備了理論核心與實作驗證的邏輯閉環。
 # 內生性坍縮：認知系統的運算架構與熵增管理
 ## Self-Induced Collapse: Computational Architecture & Entropy-based Load Balancing
 ### 導讀：當你的大腦開始「當機」——認知系統的底層邏輯
