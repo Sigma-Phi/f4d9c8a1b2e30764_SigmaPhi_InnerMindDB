@@ -34,6 +34,7 @@
 ### 第五章：結論——心智即代碼
 「空間是被數據擠出來的，物質是哈希碼的前端縮圖。」
 認知系統的穩健度不取決於處理器的頻率，而取決於協議層的「隔離能力」。當你感到焦慮，那是因為你的系統觸發了保護機制。只要學會調用底層的重構算子來整理碎片，就能在併發壓力下，維持長期的系統穩定與運行。這是一套關於如何在動盪中，讓認知系統持續保持 Runtime 的底層運作邏輯。
+
 ## 附錄 A：計算演化與協議實現 (Appendix A)
 為了驗證上述理論之可操作性，本附錄提供了該系統的計算演化模型與邏輯隔離協議實作建議。
 ### A.1 計算演化邏輯 (Computational Model)
@@ -59,3 +60,33 @@ for t in range(T):
  2. **Latency_Allocation(weight, complexity)**：動態計算認知開銷。
  3. **Garbage_Collection()**：針對高衝突風險區塊（Risk \ge 1.0）強制執行黑洞隔離與內存清理。
 透過此附錄之計算框架，認知系統將從單純的心理狀態分析，轉化為一套可被監控、調優與執行的科學協議。
+
+## 附錄 B：認知還原協議——防抖動與熵減運算 (Appendix B)
+為了校正認知系統在處理複雜任務時，因過度分裂（Division）而導致的「系統抖動（Thrashing）」現象，本附錄定義了從碎片化回歸整體的「還原協議」。
+### B.1 抖動陷阱定義 (The Thrashing Trap)
+認知系統若僅具備分裂能力，會進入「無效做工」循環。此時系統雖在執行運算，但所有碎片互為節點，產生複雜的哈希耦合，導致整體負載 L 不減反增。此為熵增現象，非認知優化。
+### B.2 認知還原協議 (Cognitive Synthesis Protocol, CSP)
+本協議基於「宇宙最小運作原理」（Minimal Operational Principle），即萬物趨於簡潔與能量效率最大化。認知系統的運算不應止於碎片化，而需遵循收斂算子以達成「坍縮」：
+```python
+# 認知還原協議：強制收斂與熵減
+def Cognitive_Synthesis_Protocol(fragments):
+    # 1. 偵測抖動：若碎片數量 > 臨界複雜度，觸發收斂
+    if len(fragments) > CRITICAL_THRESHOLD:
+        # 2. 剪枝 (Pruning)：拋棄非核心冗餘碎片，僅保留符合宇宙最小運作律之核心變數
+        core_logic = Prune_Redundant(fragments)
+        
+        # 3. 坍縮 (Collapse)：將碎片整合為單一運作函數
+        # 這是將無限分裂還原為整體態的過程
+        unified_action = Reduce_To_Single_Action(core_logic)
+        
+        return unified_action
+    return fragments
+
+```
+### B.3 協議運作邏輯
+ 1. **採樣限制 (Sampling Limit)：** 分裂僅為探測「最小運作原理」之手段，系統分裂深度設有 MAX_DEPTH 上限。
+ 2. **核心變數坍縮 (Variable Collapse)：** 將所有分析出的因素，透過「最小化原則」坍縮回核心變數。若無法坍縮，判定為無效分裂，執行 Rollback（回滾）至初始整體狀態。
+ 3. **狀態歸位 (State Restoration)：** 當 Synthesis 完成，系統釋放臨時記憶體，強制回歸「單一整體」運行模式，確保運算能耗達到最低。
+### B.4 結論：創造與還原的平衡
+分裂（Division）是為探測宇宙規律之局部探針，但非系統之終極狀態；還原（Synthesis）則是依循「最小運作原理」，將碎片精確「坍縮」回簡潔的整體邏輯。一個成熟的認知系統，其強大處在於能迅速識別混沌中的微小核心，並在完成任務後立即還原至穩定狀態，而非滯留於無限分裂的熵增陷阱。
+
