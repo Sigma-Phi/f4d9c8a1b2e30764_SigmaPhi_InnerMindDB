@@ -1,4 +1,4 @@
-# 資訊動力學理論（IDT）— AI 系統與 Agentic Workflow 架構版本
+# 📌資訊動力學理論（IDT）— AI 系統與 Agentic Workflow 架構版本
 
 ---
 
