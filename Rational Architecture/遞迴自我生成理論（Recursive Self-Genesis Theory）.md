@@ -1,4 +1,4 @@
-# RSRDST（遞迴自指動態系統理論）  
+# 📌 RSRDST（遞迴自指動態系統理論）  
 ## AI 系統開發與 Agentic Workflow 分析架構
 
 ---
