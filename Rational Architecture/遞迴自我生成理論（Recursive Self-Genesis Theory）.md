@@ -126,7 +126,7 @@ In multi-agent or autonomous AI systems, this theory implies that robustness and
 - 可訓練 loss function（PyTorch formulation）  
 - recursive stability constraint optimization  
 
----
+
 ---
 ## 📌 理論名稱（Theory Name）
 **遞迴自指動態系統理論（Recursive Self-Referential Dynamical Systems Theory, RSRDST）**
