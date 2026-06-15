@@ -82,7 +82,7 @@ In multi-agent or tool-using systems, this framework suggests that intelligence 
 - 多代理協同平衡（multi-agent equilibrium）
 
 ---
-## 🧭理論名稱:
+## 📌理論名稱:
 # Σ-Φ 生成空間重寫理論（Generative Space Rewrite Theory, GSRT）
 
 ---
