@@ -15,7 +15,7 @@
 
 ## 🔎 搜尋標籤
 
-SigmaPhi_InnerMindDB / Sigma Phi / f4d9c8a1b2e30764
+SigmaPhi_InnerMindDB / Sigma Phi / f4d9c8a1b2e30764 / Antagonism Lab ΣΦ / 互斥实验室
 
 ---
 
