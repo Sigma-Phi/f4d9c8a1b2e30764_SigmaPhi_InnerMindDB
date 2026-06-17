@@ -102,6 +102,7 @@ AI 設計不應只優化參數，而應建立三層結構：
 
 👉 operating near phase transition of cognition  
 👉 才具備自我演化能力與泛化能力
+
 ---
     
     
