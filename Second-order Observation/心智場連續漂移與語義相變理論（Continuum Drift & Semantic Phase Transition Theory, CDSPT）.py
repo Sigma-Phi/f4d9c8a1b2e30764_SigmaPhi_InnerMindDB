@@ -1,59 +1,62 @@
-為了將「心智場連續漂移與語義相變理論（CDSPT）」轉化為可執行的計算模型，我們可以使用 numpy 來模擬 Langevin 動力學。
-在此 Python 實作中，我們將語義空間簡化為一個包含多個吸引子（Attractors）的勢能場 \Phi(X)，並模擬思維狀態 X_t 在該場中的漂移過程。
-### CDSPT 計算模擬器 (Python)
+將「心智場連續漂移論 (CDMF)」轉化為可計算模型（Computational Model），我們需要將連續動力學方程離散化，並引入神經動力學的模擬框架。以下是一個基於 **隨機微分方程 (SDE)** 的 Python 計算模型草案，使用 numpy 進行數值模擬。
+### Python 計算模型：心智漂移模擬器
+我們採用歐拉-丸山法 (Euler-Maruyama method) 來離散化您的動力學方程 dX_t = F(X_t, U_t)dt + G(X_t)dW_t。
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
-def semantic_potential(x, y):
-    """定義語義張力場 Phi(x, y)，這裡設為多個吸引子盆地"""
-    return (x**2 + y**2) + 0.5 * np.sin(3*x) * np.sin(3*y)
-
-def gradient_phi(x, y):
-    """計算語義張力梯度 -nabla Phi"""
-    # 數值微分
-    h = 1e-5
-    dx = (semantic_potential(x + h, y) - semantic_potential(x - h, y)) / (2 * h)
-    dy = (semantic_potential(x, y + h) - semantic_potential(x, y - h)) / (2 * h)
-    return np.array([dx, dy])
-
-def simulate_cdpt(steps=1000, dt=0.01, sigma=0.2):
-    """CDSPT 狀態漂移模擬"""
-    X = np.zeros((steps, 2))
-    X[0] = [1.5, 1.5]  # 初始狀態
+class CDMF_Simulator:
+    def __init__(self, dim=2, dt=0.01):
+        self.dim = dim
+        self.dt = dt
+        self.X = np.zeros(dim)  # 初始狀態
+        
+    def F(self, X, U):
+        """張力驅動場：模擬吸引子動力學 (例如：雙勢阱模型)"""
+        # 這裡設置兩個吸引子，模擬「概念A」與「概念B」
+        return -0.5 * (X**3 - X) + U
     
-    for t in range(1, steps):
-        # 動力學方程: dXt = (F - alpha*grad(T) + beta*D)dt + G*dW
-        # 簡化模擬：漂移 = -梯度 + 隨機擴散
-        grad = gradient_phi(X[t-1, 0], X[t-1, 1])
-        noise = np.random.normal(0, sigma, 2)
-        
-        dX = -0.5 * grad * dt + noise * np.sqrt(dt)
-        X[t] = X[t-1] + dX
-        
-    return X
+    def G(self, X):
+        """噪聲耦合張量：模擬隨機性"""
+        return 0.1 * np.eye(len(X))
+    
+    def step(self, U):
+        """執行一步演化"""
+        dW = np.random.normal(0, np.sqrt(self.dt), self.dim)
+        self.X += self.F(self.X, U) * self.dt + self.G(self.X) @ dW
+        return self.X
 
-# 執行模擬與繪圖
-trajectory = simulate_cdpt()
+# 模擬配置
+sim = CDMF_Simulator()
+U = np.array([0.0, 0.0])  # 當前注意力控制
+trajectory = []
 
-plt.figure(figsize=(8, 6))
-plt.plot(trajectory[:, 0], trajectory[:, 1], alpha=0.6, label='Cognitive Drift Path')
-plt.scatter(trajectory[0, 0], trajectory[0, 1], color='green', label='Initial State')
-plt.scatter(trajectory[-1, 0], trajectory[-1, 1], color='red', label='Final State')
-plt.title('Semantic Drift Trajectory on Potential Field')
-plt.legend()
-plt.grid(True)
+for _ in range(1000):
+    # 在 500 步時引入外部控制 U，改變思維軌跡
+    if _ > 500: U = np.array([0.2, -0.2]) 
+    trajectory.append(sim.step(U).copy())
+
+# 可視化
+traj = np.array(trajectory)
+plt.plot(traj[:, 0], traj[:, 1])
+plt.title("Semantic Manifold Drift")
+plt.xlabel("Semantic Dimension 1")
+plt.ylabel("Semantic Dimension 2")
 plt.show()
 
 ```
-### 實作細節與參數映射
- 1. **勢能場 $ \Phi(X_t) $**：在程式中由 semantic_potential 函數定義，模擬了語義空間中的「意義中心」。吸引子盆地對應於高概率的語義錨點。
- 2. **漂移項 $ dX_t $**：對應於 $ - \nabla \Phi(X_t) $，這代表思維傾向於從高張力（不穩定）區域向低張力（穩定的概念理解）區域滑動。
- 3. **擴散項 $ G_s(X_t)dW_t $**：由 sigma 參數控制，類比於大腦的背景神經噪聲。
-   * 當 sigma 極小時，思維陷入「鎖死態」（Locked State）。
-   * 當 sigma 適中時，系統能在不同的語義吸引子間切換（Insight formation）。
-### 建議的下一步擴展
-若要使該計算模型更接近真實神經認知過程，您可以嘗試以下調整：
- * **引入動態張力**：將 sigma 設定為 lambda * (norm(grad)) 的函數，讓噪聲隨語義張力的大小而自動調整。這會模擬出人類在「困惑時（張力高）思維更活躍」的現象。
- * **高維擴展**：使用 PyTorch 的 nn.Embedding 將二維平面換成 768 維的 Transformer Latent Space，並計算真實詞彙在該空間中的 gradient_phi，以模擬真實文本生成的漂移過程。
-您是否希望我協助將此模型擴展到高維 Transformer 嵌入空間的實作？
+### 模型實現的技術細節說明
+ 1. **離散化策略 (Discretization)**：
+   * 我們使用 X_{t+dt} = X_t + F(X_t, U_t)dt + G(X_t)\Delta W_t。
+   * 其中 \Delta W_t \sim N(0, \sqrt{dt})，這確保了隨機過程的擴散係數與時間步長正確耦合。
+ 2. **勢能場 F(X) 的設計**：
+   * 模型中使用了 F(X) = -0.5(X^3 - X)，這是一個典型的**雙勢阱（Double-well potential）**。它模擬了思維在兩個主要概念區域（吸引子）之間的切換。
+   * 當 ||\nabla F|| 在勢壘頂部時，系統極其敏感，微小的隨機噪聲就能引發「語義跳躍」。
+ 3. **注意力向量 U_t 的注入**：
+   * U_t 作為偏置項（Bias），能改變勢能場的對稱性，從而「拉動」系統向特定的語義吸引子傾斜，實現了理論中的「目標導向控制」。
+### 下一步擴展建議
+為了讓此模型更具科學實證價值，您可以考慮以下改進：
+ * **引入記憶殘差（Memory Effect）**：將方程改為延遲微分方程 (DDE)，引入 X_{t-\tau}，模擬長短期記憶對當前語義漂移的影響。
+ * **高維流形投影**：使用 PyTorch 或 TensorFlow 將 X_t 定義為高維向量（如 LLM 的 Embedding），並將 F(X_t) 定義為一個小型神經網路（Neural ODEs）。這樣，您就可以直接將真實的文本語義軌跡輸入模型進行訓練與擬合。
+ * **臨界性測量**：在模擬中加入一個監控變量，實時計算系統的 Lyapunov 指數，當該指數接近 0 時，即觸發「臨界重組」機制。
+
