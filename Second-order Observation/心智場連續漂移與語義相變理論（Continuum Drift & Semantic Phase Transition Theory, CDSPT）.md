@@ -88,11 +88,11 @@ multi-agent system 不應只是 message passing，而是：
 
 協作本質不是通信問題，而是相變問題。
 
+---
 
+# 📌 理論名稱：心智場連續漂移論（Continuum Drift of Mind Fields, CDMF
 
-# 📌 理論名稱：心智場連續漂移論（Continuum Drift of Mind Fields, CDMF）
-⸻
-
+---
 ## I. 系統形式化 (Formal System Construction)
 
 中文定義：  
