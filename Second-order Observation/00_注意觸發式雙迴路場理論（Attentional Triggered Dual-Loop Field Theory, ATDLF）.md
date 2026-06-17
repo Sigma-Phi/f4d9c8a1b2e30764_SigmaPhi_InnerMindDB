@@ -1,3 +1,69 @@
+# 🧠ATDLF（注意觸發式雙迴路場理論）AI 系統化分析架構
+
+---
+
+# 1. 核心理論大白話（300字精華）
+
+## 中文版：
+ATDLF 可以用一句話理解：AI 系統不是一直在思考，而是「被注意喚醒時才開始運作」。在這個框架裡，系統有三個核心：注意開關（A）、當前狀態（S）、以及決定走哪條處理路徑的選擇機制（Φ）。平常系統像是待機，不處理資訊；只有當「注意被觸發」時，才進入運算狀態。進入後又分兩種行為：一種是小修小補（修正流），另一種是整體重寫結構（重構流）。
+
+對 AI 系統來說，這等於把 agent 從「持續運算機器」改成「事件驅動系統」：不是每個輸入都處理，而是只有在達到注意門檻時才啟動計算資源。這可以用在節能推理、事件型 agent、長期記憶重寫、以及多代理協作切換策略中。本質上，它是一種「降低無效計算 + 提升結構性學習」的架構。
+
+---
+
+## English Version:
+ATDLF can be understood as a system where intelligence is not continuously active, but only “awakens” when attention is triggered. Instead of always processing inputs, the system remains in a latent state until an attentional gate \(A_t\) activates it. Once activated, computation is not uniform: the system either performs local corrections (Correction Flow) or structural reconfiguration (Reconfiguration Flow).
+
+From an AI perspective, this reframes agents from continuously running optimizers into event-driven computational entities. Computation becomes conditional on attention thresholds rather than always-on input-response mapping. This enables more efficient resource allocation, sparse activation, and adaptive computation. It is especially relevant for energy-efficient inference, event-driven agents, long-horizon memory rewriting, and multi-agent coordination systems.
+
+The core idea is to replace continuous computation with attention-triggered activation, where meaningful computation only occurs at structurally significant events rather than every input step.
+
+---
+
+# 2. 概念對照表（10–12 個核心維度）
+
+| 核心概念 | AI / 系統對應 | 理論意義 |
+|----------|--------------|----------|
+| 注意場 \(A_t\) | Agent activation gate / routing trigger | 控制系統是否進入運算狀態 |
+| 觸發閾值 \(\theta_A\) | Attention threshold / activation policy | 決定何時啟動計算資源 |
+| 狀態 \(S_t\) | System state / embedding memory | 描述當前環境與內部記憶 |
+| 雙迴路場 \(\Phi_t\) | Policy head / routing network | 決定修正或重構路徑 |
+| 修正流 | Local optimization / fine-tuning step | 小幅穩定與誤差修正 |
+| 重構流 | Architecture update / model rewriting | 結構性學習與長期改變 |
+| 系統動力學 \(F\) | Transition function / environment model | 描述狀態演化規則 |
+| 收斂狀態 | Fixed point / equilibrium policy | 穩定策略或行為模式 |
+| 資訊不對稱 | POMDP partial observability | 注意未開啟時資訊不可用 |
+| 耦合強度 | Multi-agent interaction strength | 系統間影響與依賴程度 |
+| 不確定性（熵） | Policy activation entropy | 注意觸發的不確定性 |
+| 魯棒性 | Robustness to noise / adversarial input | 系統抗干擾能力 |
+
+---
+
+# 3. 理論應用的關鍵洞見 (Key Insights)
+
+## 1. 從「連續計算」轉為「事件驅動 Agent 架構」
+AI agent 不再需要每一步都運算，而是只在注意觸發時啟動推理流程。  
+→ 可顯著降低算力消耗並提升系統效率（尤其是長序列任務）。
+
+---
+
+## 2. 將 learning 拆分為「修正層」與「重構層」
+短期誤差修正與長期結構更新分離處理：  
+- 修正層：穩定行為、減少噪聲  
+- 重構層：改變模型結構與策略空間  
+→ 避免 continual learning 中的災難性遺忘問題。
+
+---
+
+## 3. 用注意閾值作為系統級資源調度器
+attention gate 不只是模型內部機制，而可以升級為 runtime scheduler：  
+- 控制 compute budget  
+- 動態分配 multi-agent 任務資源  
+- 在不同壓力下切換計算模式  
+
+→ 本質上是一種「計算資源的神經化調度系統」
+
+---
 # 📌 理論名稱：注意觸發式雙迴路場理論（Attentional Triggered Dual-Loop Field Theory, ATDLF）
 
 ---
