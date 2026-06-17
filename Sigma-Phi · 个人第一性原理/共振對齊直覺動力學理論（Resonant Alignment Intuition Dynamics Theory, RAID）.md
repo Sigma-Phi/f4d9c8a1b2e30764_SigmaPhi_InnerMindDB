@@ -86,6 +86,8 @@ RAID顯示智能不是固定函數，而是會在：
 
 👉 AI設計重點：**phase-aware agent（相變感知智能體）**
 
+---
+
 # 📌 共振對齊直覺動力學理論（Resonant Alignment Intuition Dynamics Theory, RAID）
 
 ⸻
