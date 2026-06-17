@@ -1,4 +1,4 @@
-# 內生性坍縮認知動力學理論（SICCDT）在 AI 系統開發與 Agentic Workflow 的分析架構
+# 🧠內生性坍縮認知動力學理論（SICCDT）在 AI 系統開發與 Agentic Workflow 的分析架構
 
 ---
 
@@ -196,7 +196,8 @@ SICCDT 可被定義為：
 - Self-Regulating Intelligence Systems
 
 其核心任務是在有限資源下管理熵增、避免認知坍縮，並維持長期自治系統的穩定運作。
-
+---
+## 理論名稱:
 # 📌 內生性坍縮認知動力學理論（Self-Induced Cognitive Collapse Dynamics Theory, SICCDT）
 
 ---
