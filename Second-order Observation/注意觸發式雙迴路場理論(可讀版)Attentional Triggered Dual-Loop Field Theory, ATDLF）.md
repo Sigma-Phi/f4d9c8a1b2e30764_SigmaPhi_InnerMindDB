@@ -1,7 +1,7 @@
 # 📘 SigmaPhi_InnerMindDB
 
 **作者：** Sigma Phi  
-**出版社：** Σ 互斥实验室（Antagonism Lab ΣΦ）
+**出版社：** Σ 互斥实验室（Antagonism Lab ΣΦ)
 
 ---
 
