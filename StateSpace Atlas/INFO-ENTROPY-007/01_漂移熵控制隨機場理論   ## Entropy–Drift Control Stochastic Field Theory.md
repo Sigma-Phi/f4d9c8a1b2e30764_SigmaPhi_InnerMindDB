@@ -1,4 +1,4 @@
-#  🧠 漂移熵控制隨機場理論 → AI 系統開發分析架構  
+# 🧠漂移熵控制隨機場理論 → AI 系統開發分析架構  
 ## Entropy–Drift Control Stochastic Field Theory
 
 ---
