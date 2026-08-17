@@ -1,3 +1,107 @@
+
+
+⸻
+
+奠基聲明
+
+人工智慧的問題，可能並不始於人工智慧。
+
+在設計人工智慧之前，人類首先必須面對一個更根本的問題：
+
+\boxed{
+\textbf{人類是否將自己對現實的表述，誤認為現實本身？}
+}
+
+人類並不是直接以現實世界本身進行認知，而是透過感知、觀察、記憶、語言、分類、概念與推理，建立對現實的內部模型。
+
+因此：
+
+\boxed{
+Representation\neq Phenomenon
+}
+
+然而，當人類未意識到這一區別時，便可能將自身建立的模型、分類、概念與價值判準，視為現實本身。
+
+這個問題一旦進入人工智慧的設計，就會產生更深一層的風險。
+
+因為人類不是從「現實本身」直接設計 AI，而是從：
+
+\boxed{
+\text{Human Representation of Reality}
+}
+
+設計 AI。
+
+因此形成：
+
+\boxed{
+P\rightarrow R_H\rightarrow AI
+}
+
+其中 P 為現象（Phenomenon），R_H 為人類對現象所建立的表述（Human Representation）。
+
+如果：
+
+R_H\neq P
+
+那麼以 R_H 為基礎所建立的 AI，就可能是在對人類的現實模型進行最佳化，而不是直接對現實進行最佳化。
+
+於是，一個能力更強、效率更高的 AI，並不必然代表它更接近現實。
+
+相反地，若最初的表述方向存在錯誤，則可能出現：
+
+\boxed{
+\text{Wrong Representation}
++
+\text{Higher Capability}
+=
+\text{More Efficient Error}
+}
+
+也就是：
+
+如果方向本身是錯的，那麼提高 AI 的能力，可能只是讓錯誤被更有效率地實現。
+
+因此，在討論如何讓 AI 更聰明、更快速、更準確之前，必須先回答一個更根本的問題：
+
+\boxed{
+\textbf{我們要求 AI 最佳化的對象，究竟是現實，還是我們對現實的表述？}
+}
+
+AI-RPST 正是從這個問題出發。
+
+本理論因此首先建立一個基本區分：
+
+\boxed{
+P\neq O\neq D\neq R\neq M\neq I
+}
+
+並進一步研究：
+
+現象如何被觀察、資料化、表述、建模與推理，以及人工智慧如何在這些表述之間進行轉換，最後重新作用於現實。
+
+因此，本理論的最根本命題不是：
+
+\text{How to make AI more intelligent?}
+
+而是：
+
+\boxed{
+\textbf{How can we ensure that the intelligence we optimize is directed toward reality rather than merely toward our representation of reality?}
+}
+
+中文：
+
+\boxed{
+\textbf{我們如何確保所最佳化的人工智慧，其方向指向現實，而不是僅僅指向我們對現實的表述？}
+}
+
+⸻
+
+
+
+
+
 人工智慧表述—現象分離理論
 AI Representation–Phenomenon Separation Theory
 AI-RPST
