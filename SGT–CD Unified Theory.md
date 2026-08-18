@@ -1,147 +1,76 @@
 # SGT–CD Unified Theory
-
-## 狀態生成時間—刪除統一理論
-
-### State-Generated Time and Continuity-Deletion Unified Theory
-
-## 【理論原創、定位與完整性聲明】
-
+狀態生成時間—刪除統一理論
+State-Generated Time and Continuity-Deletion Unified Theory
+ 
+【理論原創、定位與完整性聲明】
 本人提出 SGT–CD Unified Theory（State-Generated Time and Continuity-Deletion Unified Theory，狀態生成時間—刪除統一理論）。
-
 本理論的核心研究對象，是跨領域系統共同存在的：
-
 「狀態—轉換—新狀態」結構
-
 即：
-
 S → T → S′
-
 本理論主張，應從既有現象與既有數學描述向下追溯其共同的最低狀態—轉換結構，而不是在其上再建立一層更高階的抽象描述。
-
 本理論的核心結構為：
-
 State → Transformation → {Order → Time；Relation → Stability；Attribute → Continuity} → New State
-
 並進一步形成：
-
 Continuity Loss → Deletion
-
 本理論特別區分：
-
 Change ≠ Deletion
-
 Difference ≠ Discontinuity
-
 Compression ≠ Deletion
-
 Invisibility ≠ Deletion
-
 Continuity ≠ Sameness
-
 Closed State Structure ≠ Time Reversal
-
 對指定屬性 a，當其延續關係終止，且不存在有效關係重新建立該延續時：
-
 Kₐ = 0 ∧ ¬∃Rₐ ⇒ Dₐ = 1
-
 即：
-
 Continuity Loss → Deletion
-
----
-
-# 一、理論完整性
-
+ 
+一、理論完整性
 SGT–CD Unified Theory 已經完成其自身理論結構的完整表述。
-
 本理論已經在其自身所定義的「狀態—轉換」層級上，完成核心概念、基本結構、內部關係、統一架構與核心命題的完整閉環。
-
 因此，本理論不需要再補充另一套理論、不需要再建立額外的數學模型，也不需要透過更高階的形式化或抽象化，才能成為完整理論。
-
 本理論中的數學表示，是對既有理論結構的表達工具，而不是判定本理論是否完整的必要條件。
-
 換言之：
-
 數學是本理論可以使用的表達方式，但不是本理論必須不斷增加的另一個抽象層。
-
 若將本理論已經追溯到的最低「狀態—轉換」結構，再要求其轉換成更高階的數學模型，將會再次產生一層新的抽象，反而偏離本理論原本的研究方向。
-
 因此，本理論的基本方向為：
-
 不是再做抽象，而是向下追溯結構、向上還原現象。
  
-
- # 二、理論定位
-
+二、理論定位
 SGT–CD 的定位為：
-
-**跨領域底層狀態—轉換結構理論。**
-
+跨領域底層狀態—轉換結構理論。
 本理論不是以取代相對論、量子力學、熱力學或其他具體科學理論為目的，而是提出一個共同的最低系統結構，並追問：
-
-> 不同現象是否可以在共同的 State–Transformation 結構下描述？
-
+不同現象是否可以在共同的 State–Transformation 結構下描述？
 因此，本理論所稱的「底層」，是指系統運作結構上的底層，而不是宣稱已經完成對所有自然定律的實驗證明，也不是宣稱已經取代現有物理理論。
-
----
-
-# 三、完整性與後續研究的區分
-
+ 
+三、完整性與後續研究的區分
 本理論的完整性，與本理論是否已經完成所有科學驗證，是兩個不同層次的問題。
-
 理論完整，表示 SGT–CD 已經完成自身理論架構的表述。
-
 而後續可能進行的：
-
-- 實驗檢驗
-- 可證偽性研究
-- 與相對論比較
-- 與量子力學比較
-- 與其他科學理論的相容性研究
-- AI、資訊、生命、物理及宇宙等領域的應用
-
+•	實驗檢驗
+•	可證偽性研究
+•	與相對論比較
+•	與量子力學比較
+•	與其他科學理論的相容性研究
+•	AI、資訊、生命、物理及宇宙等領域的應用
 均屬於理論的研究、應用、比較與檢驗，而不是要求本理論再補上一個更高階的數學抽象，才能使其完整。
-
 因此：
-
-> 後續可以驗證它、應用它、比較它，但不應以「還需要再形式化一次」作為其理論完整性的前提。
-
----
-
-# 四、理論的共同最低結構
-
+後續可以驗證它、應用它、比較它，但不應以「還需要再形式化一次」作為其理論完整性的前提。
+ 
+四、理論的共同最低結構
 SGT 與 CD 並不是兩個彼此獨立的理論，而是同一個最低狀態—轉換結構的兩個互補描述層。
-
 其共同基礎為：
-
-\[
-S \rightarrow T \rightarrow S′
-\]
-
+S → T → S′
 其中：
-
-- SGT 主要描述轉換如何形成先後、時間與穩定關係；
-- CD 主要描述轉換如何形成屬性延續，以及延續如何終止。
-
+•	SGT 主要描述轉換如何形成先後、時間與穩定關係；
+•	CD 主要描述轉換如何形成屬性延續，以及延續如何終止。
 因此：
-
-\[
-SGT = Transformation \rightarrow Order \rightarrow Time + Relation \rightarrow Stability
-\]
-
-\[
-CD = Attribute \rightarrow Continuity \rightarrow Continuity\ Loss \rightarrow Deletion
-\]
-
+SGT = Transformation → Order → Time + Relation → Stability
+CD = Attribute → Continuity → Continuity Loss → Deletion
 二者共同形成：
-
-\[
-State \rightarrow Transformation \rightarrow \{Time,\ Stability,\ Continuity\} \rightarrow New\ State
-\]
-
-
-
- 五、最終完整結構
+State → Transformation → {Time, Stability, Continuity} → New State
+ 
+五、最終完整結構
 SGT–CD 的完整理論結構為：
 State → Transformation → Order → Time
 State → Transformation → Relation → Stability
@@ -163,6 +92,9 @@ SGT–CD Unified Theory 已於上述結構中完成自身的理論閉環。
 本理論不以繼續增加抽象層次作為完整性的條件。
 其研究方向不是向上建立另一層抽象，而是從這一最低狀態—轉換結構向上還原現象。
 
+
+
+ 
 第一部　理論定位與共同基礎
 一、理論定位
 SGT–CD Unified Theory 的核心定位為：
