@@ -1,8 +1,9 @@
-# 時間還原理論（TRT）
-Time Restoration Theory
+# 時間還原理論(Time Restoration Theory ,TRT)
 Public Release Edition
 Version 2.0｜2026 年 8 月 24 日
+
 作者：Σ-Ω
+
 核心總綱
 TRT 用三個不可互相取代的基本運動面向拆解時間現象，將時間降回表示層，並由此顯現生成整體最終的目標—起點問題（G ≃ S₀）。
 - - - 
