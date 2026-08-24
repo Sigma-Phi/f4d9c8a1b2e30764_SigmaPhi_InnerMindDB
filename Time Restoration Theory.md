@@ -1,4 +1,5 @@
 # 時間還原理論(Time Restoration Theory ,TRT)
+- - - 
 Public Release Edition
 Version 2.0｜2026 年 8 月 24 日
 
