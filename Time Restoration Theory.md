@@ -1,8 +1,12 @@
-時間還原理論（TRT）
+# 時間還原理論（TRT）
+
 Time Restoration Theory
 Public Release Edition
+
 Version 2.5｜2026 年 8 月 25 日
+
 作者：Σ-Ω
+
 核心總綱
 時間還原理論（Time Restoration Theory, TRT）的核心目的，是重新確定生成結構是否必須以時間作為其最底層條件。
 TRT 不取消時間，也不否定時間作為測量、標記與描述工具的功能。TRT 所檢查的是：若不先把時間放入生成結構，生成本身是否仍可成立、形成差異並延續。
